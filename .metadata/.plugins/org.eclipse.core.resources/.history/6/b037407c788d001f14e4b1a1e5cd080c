@@ -1,0 +1,8 @@
+package aprendizaje.servicios.tienda.product.dto;
+
+public class ApiResponse {
+	    private boolean success;
+	    private int status;
+	    private T data;
+	    private String message;
+}

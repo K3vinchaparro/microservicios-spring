@@ -1,0 +1,57 @@
+package aprendizaje.servicios.tienda.product.implementaciones;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import aprendizaje.servicios.tienda.product.modelos.Categoria;
+import aprendizaje.servicios.tienda.product.modelos.Producto;
+import aprendizaje.servicios.tienda.product.repositorios.ProductoRepositorio;
+import aprendizaje.servicios.tienda.product.servicios.ProductoService;
+
+public class ProductoServiceImpl implements ProductoService{
+	
+	@Autowired
+	private ProductoRepositorio productoRepositorio;
+
+	@Override
+	public List<Producto> listAllProduct() {
+		return productoRepositorio.findAll();
+	}
+
+	@Override
+	public Producto getProduct(Long id) {
+		return productoRepositorio.findById(id).orElse(null);
+	}
+
+	@Override
+	public Producto createProducto(Producto product) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Producto updateProducto(Producto product) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Producto deleteProducto(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Producto> findByCategoria(Categoria categoria) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Producto updateStock(Long id, Double quantity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

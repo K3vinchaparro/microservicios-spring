@@ -1,0 +1,7 @@
+package aprendizaje.servicios.tienda.user.servicios;
+
+import aprendizaje.servicios.tienda.user.modelos.Usuario;
+
+public interface UsuarioService {
+	public Usuario obtenerUsuario(Usuario usuario);
+}

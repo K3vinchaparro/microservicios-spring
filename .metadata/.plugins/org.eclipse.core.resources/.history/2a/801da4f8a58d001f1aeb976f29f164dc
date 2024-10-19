@@ -1,0 +1,43 @@
+package aprendizaje.servicios.tienda.user.implementaciones;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import aprendizaje.servicios.tienda.user.modelos.Usuario;
+import aprendizaje.servicios.tienda.user.servicios.UsuarioService;
+
+@Service
+public class UsuarioServiceImpl implements UsuarioService{
+
+	@Override
+	public List<Usuario> listaUsuarios() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Usuario crearUsuario(Usuario usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Usuario obtenerUsuario(Usuario usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Usuario editarUsuario(Usuario usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Usuario eliminarUsuario(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package aprendizaje.servicios.tienda.product.controladores;
+
+public class ProductoControlador {
+
+}

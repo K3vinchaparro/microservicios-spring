@@ -1,0 +1,5 @@
+package aprendizaje.servicios.tienda.user.implementaciones;
+
+public class UsuarioServiceImpl {
+
+}

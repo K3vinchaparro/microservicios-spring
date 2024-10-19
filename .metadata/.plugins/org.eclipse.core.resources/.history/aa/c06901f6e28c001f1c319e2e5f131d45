@@ -1,0 +1,40 @@
+package aprendizaje.servicios.tienda.product;
+
+import java.util.Date;
+import java.util.List;
+
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.context.ActiveProfiles;
+
+import aprendizaje.servicios.tienda.product.modelos.Categoria;
+import aprendizaje.servicios.tienda.product.modelos.Producto;
+import aprendizaje.servicios.tienda.product.repositorios.ProductoRepositorio;
+
+@DataJpaTest
+@ActiveProfiles("test")
+public class ProductoRepositorioMockTest {
+	
+	@Autowired
+	private ProductoRepositorio productoRepositorio;
+	
+	@Test
+	public void whenFindByCategoria_thenReturnListaProductos() {
+		Producto producto01 = Producto.builder()
+				.nombre("Computador")
+				.categoria(Categoria.builder().id(1L).build())
+				.descripcion("")
+				.stock(10)
+				.precio(Double.parseDouble("120.5"))
+				.estado("Creado")
+				.createAt(new Date()).build();
+		
+		productoRepositorio.save(producto01);
+		
+		List<Producto> founds = productoRepositorio.findByCategoria(producto01.getCategoria());
+		
+		Assertions.assertThat(founds.size()).isEqualTo(1);
+	}
+}

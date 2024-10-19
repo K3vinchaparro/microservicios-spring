@@ -1,0 +1,24 @@
+INDEX VERSION 1.134+C:\Aprendizaje\Spring\Microservicios\.metadata\.plugins\org.eclipse.jdt.core
+936612431.index
+1865797976.index
+2580004070.index
+3322284817.index
+1906434371.index
+2132294286.index
+983628137.index
+1711814843.index
+1597209505.index
+1928385692.index
+16301513.index
+1198188075.index
+2492759466.index
+2796065730.index
+659808109.index
+836404117.index
+679649306.index
+3480434609.index
+155955712.index
+2734992530.index
+3746812809.index
+4062505305.index
+996443867.index

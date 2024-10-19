@@ -1,0 +1,18 @@
+package aprendizaje.servicios.tienda.product.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@SuppressWarnings("unused")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ApiResponse<T> {
+    private boolean success;
+    private int status;
+    private T data;
+    private String message;
+}
