@@ -2,7 +2,7 @@ spring:
   application:
     name: service-user
   datasource:
-    url: jdbc:postgresql://localhost:5432/tienda
+    url: jdbc:postgresql://host.docker.internal:5432/tienda
     username: postgres
     password: root
   jpa:
